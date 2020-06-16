@@ -1,0 +1,218 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #F8F8F8;
+}
+
+#btn {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#btn-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#btn-bg > svg {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.c-b{
+    width: 25px;
+    height: 25px;
+}
+
+.c-s {
+    width: 15px;
+    height: 15px;
+}
+
+#btn-bg > svg:nth-of-type(1) {
+    top: -20px;
+    left: -10px;
+}
+
+#btn-bg > svg:nth-of-type(2) {
+    top: -35px;
+    left: 150px;
+}
+
+#btn-bg > svg:nth-of-type(3) {
+    top: -10px;
+    left: 230px;
+}
+
+#btn-bg > svg:nth-of-type(4) {
+    top: 30px;
+    left: -20px;
+}
+
+#btn-bg > svg:nth-of-type(5) {
+    top: 95px;
+    left: 40px;
+}
+
+#btn-bg > svg:nth-of-type(5) {
+    top: 95px;
+    left: 40px;
+}
+
+#btn-bg > svg:nth-of-type(6) {
+    top: 110px;
+    left: 150px;
+}
+
+#btn-bg > svg:nth-of-type(7) {
+    top: 90px;
+    left: 180px;
+}
+
+#btn-bg > svg:nth-of-type(8) {
+    top: -10px;
+    left: 20px;
+}
+
+#btn-bg > svg:nth-of-type(9) {
+    top: -20px;
+    left: 50px;
+}
+
+#btn-bg > svg:nth-of-type(10) {
+    top: -35px;
+    left: 80px;
+}
+
+#btn-bg > svg:nth-of-type(11) {
+    top: -20px;
+    left: 110px;
+}
+
+#btn-bg > svg:nth-of-type(12) {
+    top: -25px;
+    left: 190px;
+}
+
+#btn-bg > svg:nth-of-type(13) {
+    top: 20px;
+    left: 235px;
+}
+#btn-bg > svg:nth-of-type(14) {
+    top: 50px;
+    left: 240px;
+}
+#btn-bg > svg:nth-of-type(15) {
+    top: 80px;
+    left: 220px;
+}
+
+
+#btn-bg > svg:nth-of-type(16) {
+    top: 80px;
+    left: 150px;
+}
+
+#btn-bg > svg:nth-of-type(17) {
+    top: 80px;
+    left: 120px;
+}
+
+#btn-bg > svg:nth-of-type(18) {
+    top: 105px;
+    left: 110px;
+}
+
+#btn-bg > svg:nth-of-type(19) {
+    top: 85px;
+    left: 90px;
+}
+
+
+#btn-bg > svg:nth-of-type(20) {
+    top: 70px;
+    left: 5px;
+}
+
+#btn-bg > svg:nth-of-type(21) {
+    top: 90px;
+    left: -20px;
+}
+
+#btn-bg > svg:nth-of-type(22) {
+    top: 60px;
+    left: -20px;
+}
+
+#btn-bg > svg:nth-of-type(23) {
+    top: 5px;
+    left: -20px;
+}
+
+
+#btn-bg > svg:nth-of-type(odd) > path {
+    fill: rgb(238, 66, 123);
+    stroke: none;
+}
+#btn-bg > svg:nth-of-type(even) > path {
+    fill: rgb(66, 92, 238);
+    stroke: none;
+}
+
+#btn-bg > svg:nth-of-type(5n) > path {
+    fill: rgb(221, 238, 66);
+    stroke: none;
+}
+
+#btn-bg > svg:nth-of-type(3n) > path {
+    fill: rgb(238, 149, 66);
+    stroke: none;
+}
+
+#btn-bg > svg:nth-of-type(odd) { transition: .5s cubic-bezier(0.25, 0.1, 0.25, 1.44);}
+#btn-bg > svg:nth-of-type(even) { transition: .8s cubic-bezier(0.25, 0.1, 0.25, 1);}
+#btn-bg > svg:nth-of-type(5n) { transition: .4s cubic-bezier(0.25, 0.1, 0.25, 1.44);}
+#btn-bg > svg:nth-of-type(3n) { transition: .3s cubic-bezier(0.25, 0.1, 0.25, 1.44);}
+#btn-bg > svg:nth-of-type(7n) { transition: .10s cubic-bezier(0.25, 0.1, 0.25, 1.1);}
+
+#btn-text {
+    padding: 1rem 5rem;
+    font-size: 26px;
+    font-family: Sriracha, sans-serif;
+    border-radius: 4rem;
+    border: 3px solid currentColor;
+    background-color: #fff;
+    z-index: 1;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+#btn-text:hover {
+    background-color: black;
+    color: #F8F8F8;
+    transform: scale(.8);
+}
+
+#btn-text:not(:hover) + #btn-bg > svg {
+    top: 50%;
+    left: 50%;
+}

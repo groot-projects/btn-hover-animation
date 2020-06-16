@@ -1,0 +1,19 @@
+{
+  "name": "btn-animation",
+  "version": "1.0.0",
+  "description": "A simple animation on button",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/groot-projects/btn-hover-animation.git"
+  },
+  "author": "Gaurav Bhardwaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/groot-projects/btn-hover-animation/issues"
+  },
+  "homepage": "https://github.com/groot-projects/btn-hover-animation#readme"
+}
